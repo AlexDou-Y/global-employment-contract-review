@@ -33,6 +33,78 @@ Use this Skill when reviewing:
 - country-specific labor contract templates;
 - contracts where Legal, HR, Payroll, EOR, Tax, visa, or local counsel input may be needed.
 
+## Installation
+
+### Prerequisites
+
+- Claude Code, Codex, or another Agent Skills-compatible assistant.
+- Git installed for clone-based installation.
+- Supported system: Windows, macOS, or Linux.
+
+### Method 1: Clone to skills directory
+
+For Claude Code:
+
+```bash
+# Linux / macOS
+git clone https://github.com/AlexDou-Y/review-overseas-employment-contracts.git \
+  ~/.claude/skills/review-overseas-employment-contracts
+```
+
+```powershell
+# Windows PowerShell
+git clone https://github.com/AlexDou-Y/review-overseas-employment-contracts.git `
+  "$HOME\.claude\skills\review-overseas-employment-contracts"
+```
+
+For Codex:
+
+```bash
+# Linux / macOS
+git clone https://github.com/AlexDou-Y/review-overseas-employment-contracts.git \
+  ~/.codex/skills/review-overseas-employment-contracts
+```
+
+```powershell
+# Windows PowerShell
+git clone https://github.com/AlexDou-Y/review-overseas-employment-contracts.git `
+  "$HOME\.codex\skills\review-overseas-employment-contracts"
+```
+
+### Method 2: Manual download
+
+1. Download this repository as a ZIP file.
+2. Extract the ZIP file.
+3. Copy the entire `review-overseas-employment-contracts/` directory to your skills directory:
+
+| Assistant | Linux / macOS | Windows |
+|---|---|---|
+| Claude Code | `~/.claude/skills/` | `%USERPROFILE%\.claude\skills\` |
+| Codex | `~/.codex/skills/` | `%USERPROFILE%\.codex\skills\` |
+
+### Verify installation
+
+Restart or reload your assistant, then check the skills list:
+
+- Claude Code: type `/skills` and confirm that `review-overseas-employment-contracts` appears.
+- Codex: start a new session and confirm the Skill is available in the skills list.
+
+## How To Use
+
+Attach or provide the contract file, then explicitly call the Skill in your prompt:
+
+```text
+使用 review-overseas-employment-contracts，按雇主方 HR 合规审查视角，审核这个澳洲劳动合同。请输出 Markdown 报告，所有风险提示需要标注来源；如无法找到官方来源，请使用降级提示并列入签署前待确认事项。
+```
+
+For best results, provide:
+
+- country / region;
+- employee type and work location;
+- legal employer and payroll entity;
+- contract file or extracted contract text;
+- any known Modern Award, collective agreement, EOR, payroll, tax, visa, or local counsel context.
+
 ## Review Position
 
 The Skill treats the company as the review client.

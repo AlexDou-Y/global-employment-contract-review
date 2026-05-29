@@ -33,6 +33,78 @@
 - 国家/地区劳动合同模板；
 - 需要 Legal、HR、Payroll、EOR、Tax、签证供应商或当地律师确认的合同文件。
 
+## 安装
+
+### 前置条件
+
+- 已安装 Claude Code、Codex，或其他兼容 Agent Skills 的 AI 助手。
+- 如采用 clone 方式安装，需要已安装 Git。
+- 支持系统：Windows、macOS、Linux。
+
+### 方式一：Clone 到 skills 目录
+
+Claude Code：
+
+```bash
+# Linux / macOS
+git clone https://github.com/AlexDou-Y/review-overseas-employment-contracts.git \
+  ~/.claude/skills/review-overseas-employment-contracts
+```
+
+```powershell
+# Windows PowerShell
+git clone https://github.com/AlexDou-Y/review-overseas-employment-contracts.git `
+  "$HOME\.claude\skills\review-overseas-employment-contracts"
+```
+
+Codex：
+
+```bash
+# Linux / macOS
+git clone https://github.com/AlexDou-Y/review-overseas-employment-contracts.git \
+  ~/.codex/skills/review-overseas-employment-contracts
+```
+
+```powershell
+# Windows PowerShell
+git clone https://github.com/AlexDou-Y/review-overseas-employment-contracts.git `
+  "$HOME\.codex\skills\review-overseas-employment-contracts"
+```
+
+### 方式二：手动下载
+
+1. 下载本仓库 ZIP 文件。
+2. 解压 ZIP 文件。
+3. 将整个 `review-overseas-employment-contracts/` 目录复制到对应 skills 目录：
+
+| AI 助手 | Linux / macOS | Windows |
+|---|---|---|
+| Claude Code | `~/.claude/skills/` | `%USERPROFILE%\.claude\skills\` |
+| Codex | `~/.codex/skills/` | `%USERPROFILE%\.codex\skills\` |
+
+### 验证安装
+
+重启或刷新 AI 助手后，检查 skills 列表：
+
+- Claude Code：输入 `/skills`，确认可以看到 `review-overseas-employment-contracts`。
+- Codex：开启新会话，确认 skills 列表中可以看到该 Skill。
+
+## 使用方式
+
+上传或提供劳动合同文件，并在提示词中明确调用该 Skill：
+
+```text
+使用 review-overseas-employment-contracts，按雇主方 HR 合规审查视角，审核这个澳洲劳动合同。请输出 Markdown 报告，所有风险提示需要标注来源；如无法找到官方来源，请使用降级提示并列入签署前待确认事项。
+```
+
+为提高审核质量，建议同时提供：
+
+- 国家 / 地区；
+- 员工类型和实际工作地点；
+- 法定雇主和发薪主体；
+- 合同文件或已抽取的合同文本；
+- 已知的 Modern Award、集体协议、EOR、Payroll、Tax、签证或当地律师背景信息。
+
 ## 审查立场
 
 这个 Skill 将公司视为审查客户。
@@ -239,4 +311,3 @@ Evidence validation passed.
 - 不同国家和议题的官方来源可获得性不同。
 - 解除、竞业限制、税务、社保、移民、EOR 责任等事项通常需要当地律师、供应商、Payroll、Tax/Finance 或 Legal 确认。
 - 如果事实信息缺失，报告应列明假设并放入签署前待确认事项。
-
