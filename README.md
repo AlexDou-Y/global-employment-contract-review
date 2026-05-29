@@ -1,3 +1,9 @@
+<p align="left">
+  <a href="./README.md">English</a>
+  |
+  <a href="./README.zh.md">中文</a>
+</p>
+
 # Review Overseas Employment Contracts
 
 Employer-side HR compliance skill for reviewing overseas employment contracts, offer letters, EOR employment documents, expatriate arrangements, and local labor contract templates.
@@ -183,6 +189,7 @@ The validator checks:
 review-overseas-employment-contracts/
 ├─ SKILL.md
 ├─ README.md
+├─ README.zh.md
 ├─ agents/
 │  └─ openai.yaml
 ├─ docs/
