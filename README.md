@@ -182,8 +182,13 @@ The validator checks:
 ```text
 review-overseas-employment-contracts/
 ├─ SKILL.md
+├─ README.md
 ├─ agents/
 │  └─ openai.yaml
+├─ docs/
+│  ├─ introducing-review-overseas-employment-contracts-skill.en.md
+│  ├─ introducing-review-overseas-employment-contracts-skill.zh.md
+│  └─ introducing-review-overseas-employment-contracts-skill.zh-en.md
 ├─ references/
 │  ├─ anti-hallucination-rules.md
 │  ├─ country-rule-template.md
