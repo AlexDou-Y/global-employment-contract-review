@@ -1,12 +1,12 @@
-# 海外劳动合同雇主方审核 Skill 介绍
+# 全球劳动合同雇主方审核 Skill 介绍
 
 <p align="center">
-  <a href="./introducing-review-overseas-employment-contracts-skill.en.md">English</a>
+  <a href="./introducing-global-employment-contract-review-skill.en.md">English</a>
   |
-  <a href="./introducing-review-overseas-employment-contracts-skill.zh.md">中文</a>
+  <a href="./introducing-global-employment-contract-review-skill.zh.md">中文</a>
 </p>
 
-> 一个用于海外劳动合同雇主方 HR 合规审查的 Codex Skill。
+> 一个用于全球及海外劳动合同雇主方 HR 合规审查的 Codex Skill。
 
 ## 1. 为什么要做这个 Skill
 
@@ -20,7 +20,7 @@
 
 ## 2. 它审核什么
 
-这个 Skill 审核可能让公司承担雇主义务的海外雇佣相关文件，包括：
+这个 Skill 审核可能让公司承担雇主义务的全球及海外雇佣相关文件，包括：
 
 - 本地劳动合同；
 - 包含雇佣条款的 offer letter；
@@ -160,7 +160,7 @@ flowchart TD
 ## 10. 示例 Prompt
 
 ```text
-使用 review-overseas-employment-contracts，按雇主方 HR 合规审查视角，审核这个澳洲劳动合同。请输出 Markdown 报告，所有风险提示需要标注来源；如无法找到官方来源，请使用降级提示并列入签署前待确认事项。
+使用 global-employment-contract-review，按雇主方 HR 合规审查视角，审核这个澳洲劳动合同。请输出 Markdown 报告，所有风险提示需要标注来源；如无法找到官方来源，请使用降级提示并列入签署前待确认事项。
 ```
 
 ## 11. 校验方式
@@ -173,4 +173,3 @@ flowchart TD
 ## 12. 使用边界
 
 这个 Skill 用于 HR 合规审查和风险初筛，不替代最终法律意见。对于解除、竞业限制、税务、社保、工签、EOR 责任或高风险当地法律问题，HR 应根据事项类型进一步找 Legal、当地律师、Payroll、Tax/Finance、EOR、签证供应商或业务负责人确认。
-

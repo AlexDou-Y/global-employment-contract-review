@@ -4,15 +4,15 @@
   <a href="./README.zh.md">中文</a>
 </p>
 
-# Review Overseas Employment Contracts
+# Global Employment Contract Review
 
-Employer-side HR compliance skill for reviewing overseas employment contracts, offer letters, EOR employment documents, expatriate arrangements, and local labor contract templates.
+Employer-side HR compliance skill for reviewing global and overseas employment contracts, offer letters, EOR employment documents, expatriate arrangements, and local labor contract templates.
 
-This Skill turns overseas employment contract review into a reusable workflow: extract contract facts, build a country-specific legal baseline, classify employer-side risks, cite sources, and generate an auditable Markdown review report.
+This Skill turns global employment contract review into a reusable workflow: extract contract facts, build a country-specific legal baseline, classify employer-side risks, cite sources, and generate an auditable Markdown review report.
 
 ## What It Does
 
-- Reviews overseas employment contracts from the **employer-side HR compliance** perspective.
+- Reviews global and overseas employment contracts from the **employer-side HR compliance** perspective.
 - Checks whether the document appears legally usable, operationally executable, cost-controlled, and not unnecessarily unfavorable to the employer.
 - Identifies whether the contract:
   - may violate local mandatory employment rules;
@@ -47,35 +47,35 @@ For Claude Code:
 
 ```bash
 # Linux / macOS
-git clone https://github.com/AlexDou-Y/review-overseas-employment-contracts.git \
-  ~/.claude/skills/review-overseas-employment-contracts
+git clone https://github.com/AlexDou-Y/global-employment-contract-review.git \
+  ~/.claude/skills/global-employment-contract-review
 ```
 
 ```powershell
 # Windows PowerShell
-git clone https://github.com/AlexDou-Y/review-overseas-employment-contracts.git `
-  "$HOME\.claude\skills\review-overseas-employment-contracts"
+git clone https://github.com/AlexDou-Y/global-employment-contract-review.git `
+  "$HOME\.claude\skills\global-employment-contract-review"
 ```
 
 For Codex:
 
 ```bash
 # Linux / macOS
-git clone https://github.com/AlexDou-Y/review-overseas-employment-contracts.git \
-  ~/.codex/skills/review-overseas-employment-contracts
+git clone https://github.com/AlexDou-Y/global-employment-contract-review.git \
+  ~/.codex/skills/global-employment-contract-review
 ```
 
 ```powershell
 # Windows PowerShell
-git clone https://github.com/AlexDou-Y/review-overseas-employment-contracts.git `
-  "$HOME\.codex\skills\review-overseas-employment-contracts"
+git clone https://github.com/AlexDou-Y/global-employment-contract-review.git `
+  "$HOME\.codex\skills\global-employment-contract-review"
 ```
 
 ### Method 2: Manual download
 
 1. Download this repository as a ZIP file.
 2. Extract the ZIP file.
-3. Copy the entire `review-overseas-employment-contracts/` directory to your skills directory:
+3. Copy the entire `global-employment-contract-review/` directory to your skills directory:
 
 | Assistant | Linux / macOS | Windows |
 |---|---|---|
@@ -86,7 +86,7 @@ git clone https://github.com/AlexDou-Y/review-overseas-employment-contracts.git 
 
 Restart or reload your assistant, then check the skills list:
 
-- Claude Code: type `/skills` and confirm that `review-overseas-employment-contracts` appears.
+- Claude Code: type `/skills` and confirm that `global-employment-contract-review` appears.
 - Codex: start a new session and confirm the Skill is available in the skills list.
 
 ## How To Use
@@ -94,7 +94,7 @@ Restart or reload your assistant, then check the skills list:
 Attach or provide the contract file, then explicitly call the Skill in your prompt:
 
 ```text
-使用 review-overseas-employment-contracts，按雇主方 HR 合规审查视角，审核这个澳洲劳动合同。请输出 Markdown 报告，所有风险提示需要标注来源；如无法找到官方来源，请使用降级提示并列入签署前待确认事项。
+使用 global-employment-contract-review，按雇主方 HR 合规审查视角，审核这个澳洲劳动合同。请输出 Markdown 报告，所有风险提示需要标注来源；如无法找到官方来源，请使用降级提示并列入签署前待确认事项。
 ```
 
 For best results, provide:
@@ -258,16 +258,16 @@ The validator checks:
 ## Directory Structure
 
 ```text
-review-overseas-employment-contracts/
+global-employment-contract-review/
 ├─ SKILL.md
 ├─ README.md
 ├─ README.zh.md
 ├─ agents/
 │  └─ openai.yaml
 ├─ docs/
-│  ├─ introducing-review-overseas-employment-contracts-skill.en.md
-│  ├─ introducing-review-overseas-employment-contracts-skill.zh.md
-│  └─ introducing-review-overseas-employment-contracts-skill.zh-en.md
+│  ├─ introducing-global-employment-contract-review-skill.en.md
+│  ├─ introducing-global-employment-contract-review-skill.zh.md
+│  └─ introducing-global-employment-contract-review-skill.zh-en.md
 ├─ references/
 │  ├─ anti-hallucination-rules.md
 │  ├─ country-rule-template.md
@@ -287,7 +287,7 @@ review-overseas-employment-contracts/
 ## Example Prompt
 
 ```text
-使用 review-overseas-employment-contracts，按雇主方 HR 合规审查视角，审核这个澳洲劳动合同。请输出 Markdown 报告，所有风险提示需要标注来源；如无法找到官方来源，请使用降级提示并列入签署前待确认事项。
+使用 global-employment-contract-review，按雇主方 HR 合规审查视角，审核这个澳洲劳动合同。请输出 Markdown 报告，所有风险提示需要标注来源；如无法找到官方来源，请使用降级提示并列入签署前待确认事项。
 ```
 
 ## Validation

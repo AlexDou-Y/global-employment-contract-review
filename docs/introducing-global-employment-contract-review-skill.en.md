@@ -1,12 +1,12 @@
-# Introducing Review Overseas Employment Contracts
+# Introducing Global Employment Contract Review
 
 <p align="center">
-  <a href="./introducing-review-overseas-employment-contracts-skill.en.md">English</a>
+  <a href="./introducing-global-employment-contract-review-skill.en.md">English</a>
   |
-  <a href="./introducing-review-overseas-employment-contracts-skill.zh.md">中文</a>
+  <a href="./introducing-global-employment-contract-review-skill.zh.md">中文</a>
 </p>
 
-> A Codex Skill for employer-side HR compliance review of overseas employment contracts.
+> A Codex Skill for employer-side HR compliance review of global and overseas employment contracts.
 
 ## 1. Why This Skill Was Built
 
@@ -20,7 +20,7 @@ This Skill was built from the practical experience of overseas HR expert AlexD i
 
 ## 2. What It Reviews
 
-The Skill reviews overseas employment-related documents that may create employment obligations for the company, including:
+The Skill reviews global and overseas employment-related documents that may create employment obligations for the company, including:
 
 - local employment agreements;
 - offer letters containing employment terms;
@@ -148,7 +148,7 @@ The validator checks required fields, source labels, unresolved placeholders, ov
 ## 9. Repository Structure
 
 ```text
-review-overseas-employment-contracts/
+global-employment-contract-review/
 ├─ SKILL.md
 ├─ README.md
 ├─ agents/
@@ -161,7 +161,7 @@ review-overseas-employment-contracts/
 ## 10. Example Prompt
 
 ```text
-Use review-overseas-employment-contracts to review this Australia employment agreement from the employer-side HR compliance perspective. Output a Markdown report. Cite sources for every risk finding. If no official source is found, use the fallback warning and list the issue under signing-before-confirmation items.
+Use global-employment-contract-review to review this Australia employment agreement from the employer-side HR compliance perspective. Output a Markdown report. Cite sources for every risk finding. If no official source is found, use the fallback warning and list the issue under signing-before-confirmation items.
 ```
 
 ## 11. Validation
@@ -182,4 +182,3 @@ Evidence validation passed.
 ## 12. Limitations
 
 This Skill is designed for HR compliance review and risk triage. It does not replace final legal advice. For termination, restrictive covenant, tax, social security, immigration, EOR responsibility, or high-risk local law issues, HR should confirm with Legal, local counsel, Payroll, Tax/Finance, EOR provider, visa vendor, or business owner as appropriate.
-
