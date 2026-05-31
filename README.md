@@ -330,3 +330,7 @@ Evidence validation passed.
 - Official source availability varies by country and topic.
 - Restrictive covenant, termination, tax, social security, immigration, and EOR responsibility issues often require local counsel, vendor, Payroll, Tax/Finance, or Legal confirmation.
 - If facts are missing, the report should state assumptions and list signing-before-confirmation items.
+
+## Acknowledgements
+
+This Skill is continuously improved based on Global HR Alex Dou's HR management experience in Chinese and international companies, as well as practical work reviewing and handling employment contracts and employee relations matters across China, Japan, Korea, Southeast Asia, the Middle East, Europe, and other countries and regions. These cross-regional employment scenarios, case reviews, and accumulated methods provide the foundation for the Skill's review framework, risk classification, source verification, and output structure.
