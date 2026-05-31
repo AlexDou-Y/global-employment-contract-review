@@ -10,6 +10,16 @@ Employer-side HR compliance skill for reviewing global and overseas employment c
 
 This Skill turns global employment contract review into a reusable workflow: extract contract facts, build a country-specific legal baseline, classify employer-side risks, cite sources, and generate an auditable Markdown review report.
 
+## Why This Skill Was Built
+
+As Chinese companies accelerate their global expansion, business operations increasingly cover more countries and regions, making overseas employment scenarios more complex. Labor laws, immigration rules, payroll practices, social security, individual income tax, termination protection, restrictive covenants, and employer obligations can vary significantly by jurisdiction. Compliant employment is therefore a foundation for stable overseas operations.
+
+Among these compliance matters, employment contract review is the starting point of formal compliant employment. A contract does not only define the employee's basic employment terms. It also affects payroll execution, leave management, performance management, employee relations, termination handling, dispute response, and evidence retention. As overseas hiring grows, the need to review employment contracts across different countries and regions continues to increase.
+
+In practice, no single HR professional or lawyer can fully master the labor laws, immigration rules, and employment practices of every country and region. At the same time, employment contract review and employee relations management share common patterns: identifying the legal employer, work location, governing law, compensation and benefits, working time and leave, termination arrangements, employee entitlements, employer protections, evidence retention, and items requiring confirmation.
+
+This Skill is based on overseas HR expert AlexD's practical experience in multinational HR management and multi-jurisdiction employment contract review. With AI, that experience is distilled into a standardized workflow covering review logic, risk classification, source verification, and report structure. To reduce AI hallucination and improve output quality and auditability, the Skill uses official-source priority, Evidence lock, mandatory fallback wording, signing-before-confirmation items, and a report evidence validation script.
+
 ## What It Does
 
 - Reviews global and overseas employment contracts from the **employer-side HR compliance** perspective.
