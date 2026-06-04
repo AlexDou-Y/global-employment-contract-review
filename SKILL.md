@@ -106,8 +106,11 @@ Use Simplified Chinese by default. Output a Markdown report only unless the user
 | Putting all risks in one wide table | Use one numbered heading and one fixed-field review block for each finding |
 | Repeating the same issue in every section | Put the full analysis once, then cross-reference briefly |
 | Over-fragmenting the report into too many risk cards | Group substantive issues into the four risk-level sections: 🔴, 🟠, 🟡, 🟢 |
+| Replacing risk symbols with color words | Use `🔴`, `🟠`, `🟡`, and `🟢` in headings, risk tables, and action checklists; do not write only `红色/橙色/黄色/绿色` |
 | Treating every important employer risk as "must revise" | Use "建议确认或调整" when the issue is lawful but creates extra employer obligation or cost |
 | Mixing "可以保留" items into the action checklist | Put them in the appendix only |
+| Saying "above statutory" or "below statutory" without explaining the delta | Add a compact comparison table or scenario breakdown showing statutory rule vs contract language vs employer impact |
+| Mixing final wage, severance, unused leave payout, bonus/commission, expenses, and equity into one payment-timing finding | Split payment types and identify the legal or policy deadline for each |
 | Treating EOR as risk-free | Check EOR role, employer obligations, indemnity gaps, and local mandatory law |
 | Ignoring generous clauses | Flag above-statutory entitlements and employer cost/control impact |
 | Giving final legal advice | Convert to HR recommendation plus Legal/local counsel confirmation item |

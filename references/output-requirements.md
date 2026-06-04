@@ -11,10 +11,21 @@ Produce one Markdown report. Do not generate `.docx`, spreadsheet, or slides unl
 - Use compact tables for overall conclusions, risk distribution, final handling checklist, pending confirmations, sources, and appendix items.
 - Use narrative clause review blocks for substantive clause analysis.
 - Keep official-source citations as short labels in the body, such as `[S1]`, with full links in the source list.
+- Risk levels must use the symbol labels `🔴`, `🟠`, `🟡`, and `🟢` in section headings, risk tables, and action checklists. Do not replace them with color words alone such as `红色`, `橙色`, `黄色`, or `绿色`.
 - Keep legal uncertainty explicit. Do not give final legal sign-off.
 - Use the exact fallback warning when no official source is found: `⚠️ 未检索到官方来源，以下基于模型知识库，需人工核实。`
 - Do not over-expand background. Include only facts that affect signing, revision, or confirmation decisions.
 - Apply `references/anti-hallucination-rules.md` before finalizing. Do not state unverified legal rules, numbers, official names, or contract facts as confirmed.
+
+## Explain-the-Delta Requirements
+
+When a finding depends on comparing the contract with statutory requirements, the report must make the comparison readable to HR readers.
+
+- If the statutory rule has bands, thresholds, triggers, or exceptions, include a compact comparison table in `问题判断`.
+- Do not write only "higher than statutory" or "lower than statutory"; state for which employee scenario, tenure band, contract type, termination ground, salary band, or event the delta appears.
+- Distinguish these labels explicitly when relevant: `明显低于法定底线`, `高于法定最低标准`, `合法但雇主额外承诺`, `执行口径不清`, `需 Legal / Payroll / local counsel 确认`.
+- For final pay or termination pay findings, split the affected amounts by type: earned wages, payment in lieu of notice, severance, unused leave payout, bonus/commission, expense reimbursement, equity, and other contingent amounts.
+- If the contract language is not necessarily illegal but may create employer cost, say exactly: "不是违法问题，而是可能形成高于法定最低标准的雇主额外承诺" or an equivalent plain-language explanation.
 
 ## Required Sections
 
@@ -79,6 +90,7 @@ Then add:
 - Each finding must have its own numbered heading, such as `### 6.2 final salary 表述过窄`.
 - Headings must describe the actual issue, not only the clause category.
 - Do not combine unrelated issues under one heading.
+- Where the issue turns on statutory comparison, `问题判断` must include the comparison logic, not only a conclusion. Use a table for tiered rules such as tenure-based notice, annual leave accrual, severance formulas, probation limits, or final-pay item categories.
 - Each clause block must use exactly these fields:
   - 条款位置
   - 原文内容
@@ -105,6 +117,8 @@ Do not include "可以保留 / 暂不修改" in this action checklist. Put those
 Use the title **签署前待确认事项**. This section is for issues that cannot be finally concluded from the contract and public sources alone and require Legal, local counsel, EOR, Payroll, Tax, visa vendor, or business owner confirmation.
 
 ## Visual Conventions
+
+Use the actual symbol in output, not the Chinese color word alone.
 
 | Symbol | Meaning |
 |---|---|

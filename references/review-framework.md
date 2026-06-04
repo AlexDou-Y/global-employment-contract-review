@@ -34,7 +34,7 @@ Use the employer-side HR compliance perspective. The goal is to help the employe
 | Policies and handbook | Are company policies incorporated without freezing future amendment rights? |
 | Confidentiality and IP | Are confidentiality, data, inventions, and IP assignment enforceable locally? |
 | Restrictive covenants | Are non-compete, non-solicit, compensation, duration, scope, and enforcement rules checked? |
-| Termination | Are notice, cause, severance, garden leave, payment in lieu, and procedural requirements compliant? |
+| Termination | Are statutory grounds, notice bands, payment in lieu, severance, final wage settlement, garden leave, prohibited termination periods, and procedural requirements separated and compliant? |
 | Dispute resolution | Is forum/law enforceable? Does arbitration or court selection conflict with mandatory local labor rules? |
 | Language and execution | Is controlling language clear? Are signatures, witnesses, wet ink/e-signature, and local filing needs handled? |
 
@@ -47,12 +47,21 @@ For each material clause, answer all four:
 3. **高于法定权益**: Does the contract grant employee rights, benefits, compensation, leave, notice, severance, or procedural protections above the statutory floor?
 4. **雇主不利条款**: Does the clause increase cost, reduce flexibility, weaken evidence, create automatic entitlement, restrict termination, or bind future company policy changes?
 
+## Delta Explanation Rules
+
+When a finding says a clause is above, below, or different from statutory requirements, do not stop at a conclusion. Explain the delta in operational terms.
+
+- If a contract grants a fixed notice period, leave entitlement, severance, sick pay, probation protection, bonus, allowance, or payment deadline, compare it against the statutory bands or triggers in a compact table when the rule varies by tenure, salary, age, contract type, employee category, termination ground, or other condition.
+- State clearly whether the issue is illegal, below statutory minimum, above statutory minimum, or only employer-unfavorable. A lawful above-statutory benefit should not be described like a violation.
+- For termination, separate at least: statutory termination grounds, notice/payment in lieu, severance, final wage settlement, unused leave payout, certificates, and post-termination obligations. Do not collapse them into one "termination" judgment.
+- For final pay, separate wage amounts already earned and calculable from severance, unused leave payout, bonus/commission, expense reimbursement, equity, and other contingent amounts. Each may have a different legal or policy deadline.
+- If the recommendation is to preserve employer flexibility, say what flexibility would be lost and under which employee scenario.
+
 ## Recommended Review Sequence
 
 1. Extract facts and quote short clause identifiers, not long contract passages.
 2. Build or load the country legal baseline.
-3. Compare contract clauses against statutory minimums and mandatory terms.
+3. Compare contract clauses against statutory minimums and mandatory terms; where the rule is conditional, show the comparison by condition instead of only summarizing.
 4. Identify above-statutory employee benefits and employer-unfavorable provisions.
 5. Convert each issue into an HR action: revise, confirm, approve exception, accept risk, or escalate.
 6. Separate confirmed findings from assumptions and items to be confirmed.
-

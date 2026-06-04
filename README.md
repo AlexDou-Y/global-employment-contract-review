@@ -333,4 +333,4 @@ Evidence validation passed.
 
 ## Acknowledgements
 
-This Skill is continuously improved based on Global HR Alex Dou's HR management experience in Chinese and international companies, as well as practical work reviewing and handling employment contracts and employee relations matters across China, Japan, Korea, Southeast Asia, the Middle East, Europe, and other countries and regions. These cross-regional employment scenarios, case reviews, and accumulated methods provide the foundation for the Skill's review framework, risk classification, source verification, and output structure.
+This Skill is continuously improved based on Alex Dou's HR management experience in Chinese and international companies, as well as practical work reviewing and handling employment contracts and employee relations matters across China, Japan, Korea, Southeast Asia, the Middle East, Europe, and other countries and regions. These cross-regional employment scenarios, case reviews, and accumulated methods provide the foundation for the Skill's review framework, risk classification, source verification, and output structure.

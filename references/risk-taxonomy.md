@@ -1,5 +1,7 @@
 # Risk Taxonomy
 
+Use the actual risk symbols `🔴`, `🟠`, `🟡`, and `🟢` in report headings, tables, and action checklists. Do not output color words alone such as `红色`, `橙色`, `黄色`, or `绿色`.
+
 ## Severity Levels
 
 | Symbol | Level | Use when | Action |
@@ -33,6 +35,20 @@ Flag a clause even if it is lawful when it:
 - gives employee unilateral resignation/termination rights without matching employer protections;
 - imports a foreign law/forum that may be ineffective under mandatory local employment law;
 - creates unclear EOR/client responsibilities or lets vendor template terms override company policy.
+
+## Delta Risk Classification
+
+Use this classification when the issue is a difference between contract language and statutory requirements:
+
+| Delta type | Classification | Required explanation |
+|---|---|---|
+| Contract is below a mandatory statutory floor | 🔴 unless source support is uncertain | Identify the exact statutory floor and how the clause falls short |
+| Contract grants more than the statutory minimum | 🟠 unless the business intentionally accepts it | State it is lawful but may create extra employer cost or reduced flexibility |
+| Contract mixes amounts with different payment deadlines | 🔴 or 🟠 depending on wage-payment risk | Split earned wages, severance, unused leave payout, bonus/commission, expenses, equity, and contingent amounts |
+| Contract uses a single fixed rule where law varies by condition | 🟠 or 🟡 | Show the statutory bands/triggers and where the fixed rule is unfavorable or unclear |
+| Contract says "as required by law" but operational steps are missing | 🟡 unless a mandatory item is absent | List which HR/Payroll/Legal steps must be added |
+
+Do not classify a lawful above-statutory benefit as "illegal". Describe it as an employer-side cost/flexibility issue and make the business choice explicit: accept the better benefit, narrow it, or revert to statutory minimum wording.
 
 ## Required Finding Fields
 
