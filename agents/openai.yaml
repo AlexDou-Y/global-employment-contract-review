@@ -1,4 +1,4 @@
 interface:
   display_name: "Global Employment Contract Review"
   short_description: "Employer-side HR contract review"
-  default_prompt: "Review this global or overseas employment contract from the employer-side HR compliance perspective and produce a Markdown risk report with official-source citations."
+  default_prompt: "Review this overseas employment contract or Offer Letter from the employer-side HR compliance perspective and produce a Markdown risk report with official-source citations."

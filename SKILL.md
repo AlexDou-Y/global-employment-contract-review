@@ -1,13 +1,13 @@
 ---
 name: global-employment-contract-review
-description: Use when reviewing global or overseas employment contracts, offer letters, EOR agreements, expatriate employment documents, or local labor contract templates from an employer-side HR compliance perspective, especially when country-specific mandatory terms, employee entitlements, employer-unfavorable clauses, official legal sources, Markdown audit reports, or Legal/EOR/vendor confirmation items are needed.
+description: Use when reviewing overseas employment contracts or Offer Letters from an employer-side HR compliance perspective, especially when country-specific mandatory terms, employee entitlements, employer-unfavorable clauses, official legal sources, Markdown audit reports, or Legal/EOR/vendor confirmation items are needed.
 ---
 
 # Global Employment Contract Review
 
 ## Overview
 
-Review global and overseas employment documents from the employer-side HR compliance perspective. Prioritize whether the document is lawful, complete under local mandatory contract requirements, more generous than statutory minimums, or unfavorable to the employer.
+Review overseas employment contracts and Offer Letters from the employer-side HR compliance perspective, based on practical experience reviewing employment contracts across multiple countries and regions. Prioritize whether the document is lawful, complete under local mandatory contract requirements, more generous than statutory minimums, or unfavorable to the employer.
 
 Use Simplified Chinese by default. Output a Markdown report only unless the user explicitly requests another format.
 

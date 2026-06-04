@@ -6,7 +6,7 @@
   <a href="./introducing-global-employment-contract-review-skill.zh.md">中文</a>
 </p>
 
-> A Codex Skill for employer-side HR compliance review of global and overseas employment contracts.
+> A Codex Skill for employer-side HR compliance review of overseas employment contracts and Offer Letters.
 
 ## 1. Why This Skill Was Built
 
@@ -16,19 +16,16 @@ Employment contract review is the starting point of compliant employment. A cont
 
 In practice, no single HR professional or lawyer can fully master the labor laws, immigration rules, and employment practices of every country and region. At the same time, employment contract review and employee relations management have shared patterns. They both require the reviewer to identify the legal employer, work location, governing law, compensation and benefits, working time and leave, termination arrangements, employee entitlements, employer protections, evidence retention, and issues requiring professional confirmation.
 
-This Skill was built from the practical experience of overseas HR expert AlexD in multinational HR management and multi-jurisdiction employment contract review. With AI, that experience is distilled into a reusable workflow covering review logic, risk classification, source verification, report structure, and action tracking. To reduce AI hallucination and improve auditability, the Skill uses official-source priority, Evidence lock, mandatory fallback wording, signing-before-confirmation items, and a report evidence validation script.
+This Skill was built from an overseas HR practitioner's practical experience reviewing employment contracts across multiple countries and regions. With AI, that experience is distilled into a reusable workflow covering review logic, risk classification, source verification, report structure, and action tracking. To reduce AI hallucination and improve auditability, the Skill uses official-source priority, Evidence lock, mandatory fallback wording, signing-before-confirmation items, and a report evidence validation script.
 
 ## 2. What It Reviews
 
-The Skill reviews global and overseas employment-related documents that may create employment obligations for the company, including:
+The Skill reviews overseas employment-related documents that may create employment obligations for the company. The document scope is limited to:
 
-- local employment agreements;
-- offer letters containing employment terms;
-- EOR employment templates;
-- expatriate employment documents;
+- overseas employment contracts;
+- Offer Letters containing employment terms;
 - fixed-term and indefinite employment contracts;
-- country-specific labor contract templates;
-- annexes or side documents that affect compensation, leave, termination, bonus, commission, confidentiality, IP, restrictive covenants, or workplace policies.
+- annexes or side documents attached to an employment contract or Offer Letter that directly affect compensation, leave, termination, bonus, commission, confidentiality, IP, restrictive covenants, or workplace policies.
 
 For each document, the Skill checks:
 
