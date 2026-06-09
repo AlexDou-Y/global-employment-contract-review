@@ -14,6 +14,9 @@ Produce one Markdown report. Do not generate `.docx`, spreadsheet, or slides unl
 - Risk levels must use the symbol labels `🔴`, `🟠`, `🟡`, and `🟢` in section headings, risk tables, and action checklists. Do not replace them with color words alone such as `红色`, `橙色`, `黄色`, or `绿色`.
 - Keep legal uncertainty explicit. Do not give final legal sign-off.
 - Use the exact fallback warning when no official source is found: `⚠️ 未检索到官方来源，以下基于模型知识库，需人工核实。`
+- If political, sovereignty, or country/region-sensitive wording is found, include it in the overall conclusion, risk overview, final handling checklist, and pending confirmations when Legal/local counsel/company approval is needed.
+- Use `⚑` as a dimension marker for political, sovereignty, or country/region-sensitive wording. `⚑` is not a risk level; pair it with `🔴/🟠/🟡/🟢` when severity is needed.
+- Do not put political/sovereignty terminology findings under a heading that only describes "高于法定权益 / 额外承诺". Use a standalone `⚑ 政治/主权/地域称谓敏感表述专项提醒` section, or broaden the severity heading to "重要雇主风险 / 签前确认事项".
 - Do not over-expand background. Include only facts that affect signing, revision, or confirmation decisions.
 - Apply `references/anti-hallucination-rules.md` before finalizing. Do not state unverified legal rules, numbers, official names, or contract facts as confirmed.
 
@@ -33,7 +36,7 @@ When a finding depends on comparing the contract with statutory requirements, th
 2. **合同基础信息与审查假设**
 3. **风险总览**
 4. **🔴 必须修改：明显违法或法定必备缺失条款**
-5. **🟠 建议确认或调整：高于法定权益 / 额外承诺条款**
+5. **🟠 建议确认或调整：重要雇主风险 / 签前确认事项**
 6. **🟡 建议完善：无明显违法但边界不清条款**
 7. **🟢 建议补充：雇主保护条款**
 8. **最终处理清单**
@@ -52,6 +55,7 @@ The "总体结论" table must show judgment plus count where relevant:
 | 法定必备条款是否全面 | [全面 / 基本全面但需补充X项 / 不全面，缺失X项 / 待确认X项] |
 | 是否存在需签署前修改的雇主方风险 | [存在X项，其中签署前建议优先处理X项 / 不存在 / 待确认X项] |
 | 是否存在高于法定权益 / 额外承诺 | [存在X项 / 不存在 / 待确认X项] |
+| 是否存在政治/主权敏感表述 | [存在X项 / 未发现 / 待确认X项] |
 
 Counting rules:
 
@@ -59,6 +63,7 @@ Counting rules:
 - "需签署前修改的雇主方风险" may count 🔴 + 🟠 + key 🟡 findings.
 - "高于法定权益 / 额外承诺" counts only findings that grant above-statutory employee rights or company extra commitments.
 - "法定必备条款是否全面" counts missing or confirmation-needed mandatory content, not general wording improvements.
+- "政治/主权敏感表述" counts country/region, government, law, court, authority, and legal-system wording issues separately from labor-law validity.
 
 ## Risk Overview Requirements
 
@@ -82,6 +87,7 @@ Then add:
 | 🟠 重要雇主风险 | [0] | [ ] | 建议确认或调整 |
 | 🟡 一般条款风险 | [0] | [ ] | 建议完善 |
 | 🟢 文件完善事项 / 雇主保护补充 | [0] | [ ] | 建议补充 |
+| 政治/主权敏感表述 | [0] | [如涉及，说明属于 🔴/🟠/🟡/🟢 哪一类] | [修改 / 确认 / 接受风险 / 补充标准] |
 
 ## Clause Review Rules
 
@@ -114,7 +120,7 @@ Do not include "可以保留 / 暂不修改" in this action checklist. Put those
 
 ## Pending Confirmation
 
-Use the title **签署前待确认事项**. This section is for issues that cannot be finally concluded from the contract and public sources alone and require Legal, local counsel, EOR, Payroll, Tax, visa vendor, or business owner confirmation.
+Use the title **签署前待确认事项**. This section is for issues that cannot be finally concluded from the contract and public sources alone and require Legal, local counsel, EOR, Payroll, Tax, visa vendor, government affairs, or business owner confirmation.
 
 ## Visual Conventions
 

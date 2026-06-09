@@ -23,6 +23,13 @@ Use the actual risk symbols `🔴`, `🟠`, `🟡`, and `🟢` in report heading
 | Evidence / Enforceability | Ambiguous clauses, missing attachments, weak approval mechanism, unenforceable restrictive covenants |
 | EOR / Vendor Risk | EOR role confusion, indemnity gaps, local employer duties, co-employment, vendor template conflicts |
 | Data / Confidentiality / IP | Confidential information, personal data, invention assignment, IP ownership, post-employment duties |
+| Political / Sovereignty Terminology | Country/region naming, Taiwan/Hong Kong/Macau wording, disputed territory references, government/legal-system names, public authority references, and external communication sensitivity |
+
+## Dimension Markers
+
+| Marker | Use when | Relationship to severity |
+|---|---|---|
+| ⚑ | Political, sovereignty, country/region, government, court, authority, or legal-system wording requires special review | Not a severity level; pair with 🔴/🟠/🟡/🟢 based on actual risk |
 
 ## Employer-Unfavorable Clause Signals
 
@@ -35,6 +42,7 @@ Flag a clause even if it is lawful when it:
 - gives employee unilateral resignation/termination rights without matching employer protections;
 - imports a foreign law/forum that may be ineffective under mandatory local employment law;
 - creates unclear EOR/client responsibilities or lets vendor template terms override company policy.
+- uses political, sovereignty, country/region, government, or legal-system wording that may conflict with company naming standards, China-context governance requirements, external communication rules, or template-reuse expectations.
 
 ## Delta Risk Classification
 
@@ -47,6 +55,7 @@ Use this classification when the issue is a difference between contract language
 | Contract mixes amounts with different payment deadlines | 🔴 or 🟠 depending on wage-payment risk | Split earned wages, severance, unused leave payout, bonus/commission, expenses, equity, and contingent amounts |
 | Contract uses a single fixed rule where law varies by condition | 🟠 or 🟡 | Show the statutory bands/triggers and where the fixed rule is unfavorable or unclear |
 | Contract says "as required by law" but operational steps are missing | 🟡 unless a mandatory item is absent | List which HR/Payroll/Legal steps must be added |
+| Contract uses political or sovereignty-sensitive terminology | 🟠 unless only translation consistency is affected | Separate local legal effectiveness from company acceptability; provide neutral wording or require Legal/local counsel confirmation |
 
 Do not classify a lawful above-statutory benefit as "illegal". Describe it as an employer-side cost/flexibility issue and make the business choice explicit: accept the better benefit, narrow it, or revert to statutory minimum wording.
 

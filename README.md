@@ -10,6 +10,13 @@ Employer-side HR compliance skill for reviewing overseas employment contracts an
 
 This Skill turns global employment contract review into a reusable workflow: extract contract facts, build a country-specific legal baseline, classify employer-side risks, cite sources, and generate an auditable Markdown review report.
 
+## Update Highlights
+
+- Added political, sovereignty, and country/region terminology review for overseas employment documents, including Taiwan, Hong Kong, Macau, disputed territories, government names, governing law, jurisdiction, public authorities, and legal-system references.
+- Added the `⚑` marker for political / sovereignty / territory-sensitive findings. `⚑` is a review dimension marker, not a severity level; it should be paired with `🔴`, `🟠`, `🟡`, or `🟢` when priority needs to be shown.
+- Updated the `🟠` section from "above-statutory entitlements / extra commitments" to "important employer risks / signing-before-confirmation items", so political and governance-sensitive issues are not incorrectly classified as employee-benefit issues.
+- Added a Taiwan governing-law example: clauses using `Republic of China`, `R.O.C.`, `中华民国`, or `中華民國` should be flagged for China-context employer review and, where legally workable, replaced with neutral Taiwan-region wording after Legal/local counsel confirmation.
+
 ## Why This Skill Was Built
 
 As Chinese companies accelerate their global expansion, business operations increasingly cover more countries and regions, making overseas employment scenarios more complex. Labor laws, immigration rules, payroll practices, social security, individual income tax, termination protection, restrictive covenants, and employer obligations can vary significantly by jurisdiction. Compliant employment is therefore a foundation for stable overseas operations.
@@ -112,7 +119,7 @@ The generated Markdown report follows this structure:
 二、合同基础信息与审查假设
 三、风险总览
 四、🔴 必须修改：明显违法或法定必备缺失条款
-五、🟠 建议确认或调整：高于法定权益 / 额外承诺条款
+五、🟠 建议确认或调整：重要雇主风险 / 签前确认事项
 六、🟡 建议完善：无明显违法但边界不清条款
 七、🟢 建议补充：雇主保护条款
 八、最终处理清单

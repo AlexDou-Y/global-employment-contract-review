@@ -17,6 +17,7 @@ Use the employer-side HR compliance perspective. The goal is to help the employe
 | Payroll location | Affects wage payment, withholding, currency, payslip, and social security handling |
 | Visa / work authorization | Illegal work risk can override contract language |
 | Document set | Contract, offer, annex, handbook, equity plan, commission plan, EOR terms |
+| Country/region terminology standard | Determines whether political, sovereignty, and jurisdiction wording is acceptable for company templates, approvals, and external circulation |
 
 ## Clause Review Checklist
 
@@ -37,6 +38,7 @@ Use the employer-side HR compliance perspective. The goal is to help the employe
 | Termination | Are statutory grounds, notice bands, payment in lieu, severance, final wage settlement, garden leave, prohibited termination periods, and procedural requirements separated and compliant? |
 | Dispute resolution | Is forum/law enforceable? Does arbitration or court selection conflict with mandatory local labor rules? |
 | Language and execution | Is controlling language clear? Are signatures, witnesses, wet ink/e-signature, and local filing needs handled? |
+| Political / sovereignty terminology | Do country/region, government, law, court, authority, and territory names create China-context governance, approval, external communication, or template-reuse risk? |
 
 ## Four Mandatory Judgments
 
@@ -46,6 +48,8 @@ For each material clause, answer all four:
 2. **法定必备内容**: Does the contract include the mandatory contents required by the country/region?
 3. **高于法定权益**: Does the contract grant employee rights, benefits, compensation, leave, notice, severance, or procedural protections above the statutory floor?
 4. **雇主不利条款**: Does the clause increase cost, reduce flexibility, weaken evidence, create automatic entitlement, restrict termination, or bind future company policy changes?
+
+For political or sovereignty-sensitive terminology, add a separate judgment: is the wording locally necessary, and is it acceptable under the company's country/region naming standards and China-context governance requirements?
 
 ## Delta Explanation Rules
 
@@ -62,6 +66,7 @@ When a finding says a clause is above, below, or different from statutory requir
 1. Extract facts and quote short clause identifiers, not long contract passages.
 2. Build or load the country legal baseline.
 3. Compare contract clauses against statutory minimums and mandatory terms; where the rule is conditional, show the comparison by condition instead of only summarizing.
-4. Identify above-statutory employee benefits and employer-unfavorable provisions.
-5. Convert each issue into an HR action: revise, confirm, approve exception, accept risk, or escalate.
-6. Separate confirmed findings from assumptions and items to be confirmed.
+4. Scan political, sovereignty, and country/region wording, especially in governing law, jurisdiction, work location, payroll/tax/social security, immigration, and signature blocks.
+5. Identify above-statutory employee benefits and employer-unfavorable provisions.
+6. Convert each issue into an HR action: revise, confirm, approve exception, accept risk, or escalate.
+7. Separate confirmed findings from assumptions and items to be confirmed.
