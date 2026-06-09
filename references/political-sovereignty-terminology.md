@@ -6,6 +6,8 @@ Review political, sovereignty, country/region, government, and legal-system term
 
 For China-headquartered or China-controlled employers, flag wording that may conflict with the company's country/region naming standards, One-China-related external communication requirements, government relations expectations, public filing standards, or internal approval rules.
 
+This review is not limited to Taiwan, Hong Kong, or Macau. Also scan globally common territorial disputes, sensitive jurisdictions, contested borders, statehood references, sanctions-sensitive regions, and inconsistent country/region naming in multinational templates.
+
 ## Mandatory Distinctions
 
 When a clause contains sensitive political or sovereignty wording, separate these judgments:

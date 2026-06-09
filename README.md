@@ -12,10 +12,16 @@ This Skill turns global employment contract review into a reusable workflow: ext
 
 ## Update Highlights
 
-- Added political, sovereignty, and country/region terminology review for overseas employment documents, including Taiwan, Hong Kong, Macau, disputed territories, government names, governing law, jurisdiction, public authorities, and legal-system references.
+- Added political, sovereignty, and country/region terminology review for overseas employment documents. The review is not limited to Taiwan, Hong Kong, and Macau; it also covers globally common territorial disputes and sensitive jurisdictional wording, including disputed territories, government names, governing law, jurisdiction, public authorities, and legal-system references.
 - Added the `⚑` marker for political / sovereignty / territory-sensitive findings. `⚑` is a review dimension marker, not a severity level; it should be paired with `🔴`, `🟠`, `🟡`, or `🟢` when priority needs to be shown.
 - Updated the `🟠` section from "above-statutory entitlements / extra commitments" to "important employer risks / signing-before-confirmation items", so political and governance-sensitive issues are not incorrectly classified as employee-benefit issues.
-- Added a Taiwan governing-law example: clauses using `Republic of China`, `R.O.C.`, `中华民国`, or `中華民國` should be flagged for China-context employer review and, where legally workable, replaced with neutral Taiwan-region wording after Legal/local counsel confirmation.
+
+## Version Update Log
+
+| Date | Update |
+|---|---|
+| 2026.06.09 | Added political, sovereignty, and country/region terminology review |
+| 2026.06.04 | Initial release |
 
 ## Why This Skill Was Built
 

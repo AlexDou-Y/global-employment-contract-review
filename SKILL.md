@@ -19,7 +19,7 @@ Use Simplified Chinese by default. Output a Markdown report only unless the user
 - Do not invent laws, article numbers, official institution names, statutory amounts, statutory days, rates, visa rules, or contract facts. Read `references/anti-hallucination-rules.md` for evidence and uncertainty rules.
 - If no official source is found, write exactly: `⚠️ 未检索到官方来源，以下基于模型知识库，需人工核实。`
 - Distinguish statutory risk from employer-commercial disadvantage. A lawful clause may still be unfavorable to the employer.
-- Review political, sovereignty, and country/region terminology as a separate employer-side governance issue. Read `references/political-sovereignty-terminology.md` when the contract mentions Taiwan, Hong Kong, Macau, disputed territories, country lists, government names, governing law, jurisdiction, public authorities, or legal-system names.
+- Review political, sovereignty, and country/region terminology as a separate employer-side governance issue. Read `references/political-sovereignty-terminology.md` when the contract mentions Taiwan, Hong Kong, Macau, globally disputed territories or jurisdictions, country/region lists, government names, governing law, jurisdiction, public authorities, or legal-system names.
 - If country/region, employee type, legal employer, actual work location, or governing law is unclear, proceed conditionally and list the missing facts in the report.
 
 ## Workflow
