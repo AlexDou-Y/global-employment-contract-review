@@ -21,6 +21,7 @@ Create or update a country rule card when reviewing a jurisdiction repeatedly. K
 | Restrictive Covenants | Non-compete, non-solicit, compensation, duration, scope |
 | Confidentiality / IP / Data | Enforceability notes and mandatory privacy requirements |
 | Employer-Unfavorable Watchouts | Clauses commonly seen in templates that exceed law or hurt employer flexibility |
+| Material China-Difference Watchouts | Mandatory local mechanisms that differ materially from China's national statutory rules and affect budget, Payroll, HR process, or employment operations; include official sources for both sides |
 | Open Questions | Items requiring Legal/local counsel/vendor confirmation |
 
 ## Storage Recommendation

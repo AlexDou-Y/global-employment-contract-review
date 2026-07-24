@@ -12,6 +12,9 @@ This Skill turns global employment contract review into a reusable workflow: ext
 
 ## Update Highlights
 
+- Expanded the contract review from six to seven mandatory review judgments by adding a “local mandatory mechanisms and China comparison” dimension for rules that affect workforce budget, Payroll configuration, HR processes, or employment operations.
+- Added dual official-source requirements for the local rule and the China national-law comparison, plus a mandatory summary row and compact table. Compliant local mechanisms must still be shown without creating false risk findings.
+- Extended the report validator to check the local-difference summary, table, contract statuses, and evidence labels.
 - Added political, sovereignty, and country/region terminology review for overseas employment documents. The review is not limited to Taiwan, Hong Kong, and Macau; it also covers globally common territorial disputes and sensitive jurisdictional wording, including disputed territories, government names, governing law, jurisdiction, public authorities, and legal-system references.
 - Added the `⚑` marker for political / sovereignty / territory-sensitive findings. `⚑` is a review dimension marker, not a severity level; it should be paired with `🔴`, `🟠`, `🟡`, or `🟢` when priority needs to be shown.
 - Updated the `🟠` section from "above-statutory entitlements / extra commitments" to "important employer risks / signing-before-confirmation items", so political and governance-sensitive issues are not incorrectly classified as employee-benefit issues.
@@ -20,8 +23,49 @@ This Skill turns global employment contract review into a reusable workflow: ext
 
 | Date | Update |
 |---|---|
+| 2026.07.24 | Added the seventh mandatory review judgment for local mandatory mechanisms and China comparison, the fixed summary table, and evidence-validation hard gates |
 | 2026.06.09 | Added political, sovereignty, and country/region terminology review |
 | 2026.06.04 | Initial release |
+
+## Update Notes (2026.07.24)
+
+This iteration arose from practical reviews of Mexican and Egyptian employment contracts. Some mandatory local mechanisms have no equivalent uniform mechanism in the verified China national-level employment rules, yet directly increase employment cost or change HR and Payroll operations. The Skill now identifies these differences proactively and translates them into budget and implementation actions.
+
+Key changes:
+
+1. **Expanded from six to seven mandatory review judgments**
+   This iteration adds the seventh judgment, “local mandatory mechanisms and China comparison.” The Skill now requires all seven:
+
+   - `是否可以作为当地雇佣合同基础版本`;
+   - `是否存在明显违法或低于法定底线的条款`;
+   - `法定必备条款是否全面`;
+   - `是否存在需签署前修改的雇主方风险`;
+   - `是否存在高于法定权益 / 额外承诺`;
+   - `是否存在 ⚑ 政治/主权/地域称谓敏感表述`;
+   - `是否存在需 HR 特别关注的当地法定差异`.
+
+   The seventh judgment covers statutory salary adjustments, pay frequency, mandatory bonuses or allowances, special leave benefits, working-time costs, social security, and termination costs.
+
+2. **Added dual official-source requirements**
+   The local rule must be supported by a local official source, and the China comparison must use an official China national-level source. If the review cannot prove that China has no comparable rule, it uses qualified wording equivalent to “no equivalent uniform mandatory mechanism was identified in the verified China national-level rules.” If either side is not verified, the contract status must be `待确认`.
+
+3. **Added a mandatory local-difference summary and table**
+   Every report must include the exact overall-conclusion row `是否存在需 HR 特别关注的当地法定差异` and the following fixed fields:
+
+   ```text
+   事项 | 当地规则及中国差异 | 合同状态 | 雇主影响 | HR 动作 | 依据
+   ```
+
+   Only these contract statuses are allowed: `与法律冲突`, `缺少法定必备内容`, `法律直接适用但合同未明确`, `合同已覆盖`, and `待确认`.
+
+4. **Kept the existing risk taxonomy and prevented false risks**
+   Contract conflicts remain classified under the existing `🔴`, `🟠`, `🟡`, and `🟢` taxonomy. Compliant mechanisms such as Aguinaldo or Prima Vacacional appear only in the local-difference table with their budget and Payroll impact; they are not repeated as contract risks.
+
+5. **Strengthened cost and operational outputs**
+   Every difference must explain its effect on budget, Payroll, HR process, or workforce arrangements. If verified rules and contract facts do not support a precise amount, the report gives only the cost item, formula, and responsible calculator.
+
+6. **Added structural validation hard gates**
+   `scripts/validate_report_evidence.py` now checks the fixed summary row, local-difference table, contract statuses, and evidence labels. The Mexican test case confirms that a wage-payment interval of no more than 15 days does not mean a mandatory 14-day biweekly cycle. Mexican and Egyptian scenarios were used for behavioral retesting, but this iteration does not hard-code either country as a country rule card.
 
 ## Why This Skill Was Built
 
@@ -42,14 +86,15 @@ The Skill reviews overseas employment-related documents that may create employme
 - fixed-term and indefinite employment contracts;
 - annexes or side documents attached to an employment contract or Offer Letter that directly affect compensation, leave, termination, bonus, commission, confidentiality, IP, restrictive covenants, or workplace policies.
 
-For each document, the Skill checks:
+For each document, the Skill completes all seven mandatory review judgments:
 
-- whether any clause appears to conflict with mandatory local employment rules;
-- whether statutory mandatory contract content is missing or needs confirmation;
-- whether the contract grants employee rights or company commitments above statutory minimums;
-- whether the wording creates employer-unfavorable cost, management, evidence, enforceability, or termination risk;
-- which issues require Legal, local counsel, Payroll, EOR, Tax/Finance, visa vendor, or business owner confirmation before signing.
-
+1. `是否可以作为当地雇佣合同基础版本`;
+2. `是否存在明显违法或低于法定底线的条款`;
+3. `法定必备条款是否全面`;
+4. `是否存在需签署前修改的雇主方风险`;
+5. `是否存在高于法定权益 / 额外承诺`;
+6. `是否存在 ⚑ 政治/主权/地域称谓敏感表述`;
+7. `是否存在需 HR 特别关注的当地法定差异`.
 ## Review Position
 
 The Skill uses an **employer-side HR compliance perspective** and treats the company as the review client.
@@ -82,24 +127,24 @@ flowchart TD
 
 ### Workflow
 
-1. **Scope the scenario**  
+1. **Scope the scenario**
    Identify country/region, employee type, employment model, legal employer, work location, governing law, payroll location, visa/work authorization, and document type.
 
-2. **Extract contract facts**  
+2. **Extract contract facts**
    Extract clauses before judging them. Use `scripts/extract_contract_text.py` when reviewing PDF, DOCX, TXT, or Markdown files.
 
-3. **Build the legal baseline**  
+3. **Build the legal baseline**
    Use official sources first. Do not invent laws, statutory thresholds, official names, salary benchmarks, or benefit rules.
 
-4. **Evidence lock**  
+4. **Evidence lock**
    Bind every planned finding to:
    - contract evidence: page, section, short original excerpt;
    - rule/source evidence: official source label, contract text, internal file, or required fallback warning.
 
-5. **Assess risks**  
-   Classify each substantive issue into one of four handling categories.
+5. **Assess risks**
+   Complete seven mandatory review judgments, with the seventh covering local mandatory mechanisms and China comparison. Substantive contract issues still use one of four handling categories; compliant local mechanisms appear only in the fixed summary table.
 
-6. **Write the report**  
+6. **Write the report**
    Use the report template and fixed clause review fields.
 
 7. **Self-check and validate**  
@@ -115,6 +160,8 @@ flowchart TD
 | 🟢 | 文件完善事项 / 雇主保护补充 | 建议补充 |
 
 This distinction matters. A clause can be lawful but still commercially or operationally unfavorable to the employer. Such issues should not always be labelled as "must revise"; they may need confirmation, narrowing, or business approval.
+
+The seventh judgment, “local mandatory mechanisms and China comparison,” is mandatory but is not a new risk level. When the contract already covers the local mechanism, report its budget and operational impact without assigning a risk color merely because it differs from China.
 
 ## Report Structure
 
@@ -133,6 +180,8 @@ The generated Markdown report follows this structure:
 十、来源清单
 附录：可以保留 / 暂不修改条款
 ```
+
+The `总体结论` section must contain `是否存在需 HR 特别关注的当地法定差异`, immediately followed by the `### 当地特殊法定机制及中外差异提示` table. If a table item is also a substantive contract risk, cross-reference the numbered finding instead of repeating the full analysis.
 
 Each finding in Sections 4-7 uses the same six fields:
 
@@ -178,6 +227,8 @@ This Skill includes explicit safeguards to reduce unsupported legal conclusions:
 - final reports can be checked by `scripts/validate_report_evidence.py`.
 
 The validator checks required fields, source labels, unresolved placeholders, over-certain wording, and required sections.
+
+For the local-difference dimension, it also checks the fixed summary row, compact table, allowed contract statuses, and `[S#]` evidence labels. A confirmed local-versus-China comparison must cite both the local and China legal baselines.
 
 ## Installation
 
@@ -304,6 +355,11 @@ global-employment-contract-review/
 ├─ scripts/
 │  ├─ extract_contract_text.py
 │  └─ validate_report_evidence.py
+├─ tests/
+│  ├─ test_local_difference_source_validation.py
+│  ├─ test_readme_local_difference_update.py
+│  ├─ test_seven_review_judgments.py
+│  └─ test_validate_report_evidence.py
 └─ templates/
    ├─ contract-review-report.md
    ├─ country-rule-card.md

@@ -19,6 +19,7 @@ Produce one Markdown report. Do not generate `.docx`, spreadsheet, or slides unl
 - Do not put political/sovereignty terminology findings under a heading that only describes "高于法定权益 / 额外承诺". Use a standalone `⚑ 政治/主权/地域称谓敏感表述专项提醒` section, or broaden the severity heading to "重要雇主风险 / 签前确认事项".
 - Do not over-expand background. Include only facts that affect signing, revision, or confirmation decisions.
 - Apply `references/anti-hallucination-rules.md` before finalizing. Do not state unverified legal rules, numbers, official names, or contract facts as confirmed.
+- Treat `当地特殊法定机制及中外差异` as a required review dimension, not a risk level. Show compliant items without assigning a false risk color.
 
 ## Explain-the-Delta Requirements
 
@@ -29,6 +30,9 @@ When a finding depends on comparing the contract with statutory requirements, th
 - Distinguish these labels explicitly when relevant: `明显低于法定底线`, `高于法定最低标准`, `合法但雇主额外承诺`, `执行口径不清`, `需 Legal / Payroll / local counsel 确认`.
 - For final pay or termination pay findings, split the affected amounts by type: earned wages, payment in lieu of notice, severance, unused leave payout, bonus/commission, expense reimbursement, equity, and other contingent amounts.
 - If the contract language is not necessarily illegal but may create employer cost, say exactly: "不是违法问题，而是可能形成高于法定最低标准的雇主额外承诺" or an equivalent plain-language explanation.
+- For a confirmed local-difference item, cite at least one official local source and one official China national-level source.
+- Do not state categorically that China has no equivalent rule unless authoritative sources establish that proposition. Otherwise write `在已核验的中国全国性规则中未见同类统一强制机制` and state the comparison scope.
+- If cost cannot be calculated from verified rules and contract facts, show the formula, affected cost components, and responsible calculator instead of inventing an amount.
 
 ## Required Sections
 
@@ -46,7 +50,7 @@ When a finding depends on comparing the contract with statutory requirements, th
 
 ## Overall Conclusion Requirements
 
-The "总体结论" table must show judgment plus count where relevant:
+The `总体结论` table must show all seven mandatory review judgments, plus a count where relevant:
 
 | 审核项目 | 结论 |
 |---|---|
@@ -55,7 +59,8 @@ The "总体结论" table must show judgment plus count where relevant:
 | 法定必备条款是否全面 | [全面 / 基本全面但需补充X项 / 不全面，缺失X项 / 待确认X项] |
 | 是否存在需签署前修改的雇主方风险 | [存在X项，其中签署前建议优先处理X项 / 不存在 / 待确认X项] |
 | 是否存在高于法定权益 / 额外承诺 | [存在X项 / 不存在 / 待确认X项] |
-| 是否存在政治/主权敏感表述 | [存在X项 / 未发现 / 待确认X项] |
+| 是否存在 ⚑ 政治/主权/地域称谓敏感表述 | [存在X项 / 未发现 / 待确认X项] |
+| 是否存在需 HR 特别关注的当地法定差异 | [存在X项 / 未发现 / 待确认X项] |
 
 Counting rules:
 
@@ -63,7 +68,29 @@ Counting rules:
 - "需签署前修改的雇主方风险" may count 🔴 + 🟠 + key 🟡 findings.
 - "高于法定权益 / 额外承诺" counts only findings that grant above-statutory employee rights or company extra commitments.
 - "法定必备条款是否全面" counts missing or confirmation-needed mandatory content, not general wording improvements.
-- "政治/主权敏感表述" counts country/region, government, law, court, authority, and legal-system wording issues separately from labor-law validity.
+- "⚑ 政治/主权/地域称谓敏感表述" counts country/region, government, law, court, authority, and legal-system wording issues separately from labor-law validity.
+- "需 HR 特别关注的当地法定差异" counts confirmed and pending mandatory local mechanisms that materially affect budget, Payroll, HR process, or employment operations, including compliant mechanisms.
+
+### 当地特殊法定机制及中外差异提示
+
+Place this subsection inside `总体结论`, immediately after the overall conclusion table. It does not add a twelfth top-level section.
+Omitting the summary row or this subsection is a report-structure failure, including in a limited-scope review or when the same topic already appears as a 🔴/🟠/🟡/🟢 finding.
+
+Use this exact table:
+
+| 事项 | 当地规则及中国差异 | 合同状态 | 雇主影响 | HR 动作 | 依据 |
+|---|---|---|---|---|---|
+| [事项] | [当地强制规则；中国全国性法定规则对照及核验范围] | [与法律冲突 / 缺少法定必备内容 / 法律直接适用但合同未明确 / 合同已覆盖 / 待确认] | [预算 / Payroll / HR流程 / 用工安排影响] | [修改 / 配置 / 计提 / 确认 / 持续监测] | [当地来源] [中国来源] |
+
+Rules:
+
+- Use only these contract statuses: `与法律冲突`, `缺少法定必备内容`, `法律直接适用但合同未明确`, `合同已覆盖`, `待确认`.
+- Include a compliant mechanism as `合同已覆盖` when it still affects employer cost or operations; do not create a 🔴/🟠/🟡/🟢 finding solely because it differs from China.
+- When the contract is silent but the rule applies automatically and local law does not require contract wording, use `法律直接适用但合同未明确`.
+- If the item is already analyzed in Sections 4-7, put the finding number in the table and do not repeat the full analysis.
+- Each row must contain source labels. A confirmed comparison must include official sources for both the local and China baselines.
+- If either side is not officially verified, use `待确认`, describe only the verified portion, and place the unresolved point in `签署前待确认事项`.
+- If no material difference is identified after completing both baselines, write one row stating `基于已核验范围未发现需单独提示的显著差异`, identify the checked scope, and cite the baseline sources. Do not use an empty table.
 
 ## Risk Overview Requirements
 
@@ -87,7 +114,7 @@ Then add:
 | 🟠 重要雇主风险 | [0] | [ ] | 建议确认或调整 |
 | 🟡 一般条款风险 | [0] | [ ] | 建议完善 |
 | 🟢 文件完善事项 / 雇主保护补充 | [0] | [ ] | 建议补充 |
-| 政治/主权敏感表述 | [0] | [如涉及，说明属于 🔴/🟠/🟡/🟢 哪一类] | [修改 / 确认 / 接受风险 / 补充标准] |
+| ⚑ 政治/主权/地域称谓敏感表述 | [0] | [如涉及，说明属于 🔴/🟠/🟡/🟢 哪一类] | [修改 / 确认 / 接受风险 / 补充标准] |
 
 ## Clause Review Rules
 
@@ -150,11 +177,14 @@ Use this legend before the source list:
 ## Hallucination Self-Check
 
 Before final delivery, verify:
+- the output contains both exact strings `是否存在需 HR 特别关注的当地法定差异` and `### 当地特殊法定机制及中外差异提示`;
 
 - every finding in Sections 4-7 has all six required fields;
 - every finding has contract evidence and an evidence label in `依据`;
 - every `[S#]` label used in findings appears in the source list;
 - each cited source supports the exact judgment;
+- every local-difference row contains evidence labels, and every confirmed comparison cites both the local and China baselines;
+- any local-difference item without two verified official baselines is marked `待确认` and is not stated as a confirmed difference;
 - no non-official source is labelled as official;
 - no unverified statutory number, amount, rate, day count, article number, or official name is stated as fact;
 - no placeholder such as `[ ]`, `TBD`, or `TODO` remains in the final report;

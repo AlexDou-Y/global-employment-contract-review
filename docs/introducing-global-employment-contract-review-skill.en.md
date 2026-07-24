@@ -33,6 +33,7 @@ For each document, the Skill checks:
 - whether statutory mandatory contract content is missing or needs confirmation;
 - whether the contract grants employee rights or company commitments above statutory minimums;
 - whether the wording creates employer-unfavorable cost, management, evidence, enforceability, or termination risk;
+- whether local law contains a mandatory mechanism that differs materially from China's national statutory rules and requires additional budget, Payroll, HR-process, or workforce action;
 - which issues require Legal, local counsel, Payroll, EOR, Tax/Finance, visa vendor, or business owner confirmation before signing.
 
 ## 3. Review Perspective
@@ -69,7 +70,7 @@ The workflow has seven steps:
 2. Extract contract facts before making legal judgments.
 3. Build a country-specific legal baseline using official sources first.
 4. Lock evidence by connecting each finding to contract text and source support.
-5. Assess risks using four mandatory questions.
+5. Complete seven mandatory review judgments, with the seventh covering material local statutory mechanisms and their China comparison.
 6. Generate a Markdown report.
 7. Run hallucination and evidence checks before delivery.
 

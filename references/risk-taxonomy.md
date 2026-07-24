@@ -31,6 +31,8 @@ Use the actual risk symbols `🔴`, `🟠`, `🟡`, and `🟢` in report heading
 |---|---|---|
 | ⚑ | Political, sovereignty, country/region, government, court, authority, or legal-system wording requires special review | Not a severity level; pair with 🔴/🟠/🟡/🟢 based on actual risk |
 
+`当地特殊法定机制及中外差异` is also a review dimension, but it has no marker. A compliant local mechanism stays in the fixed summary table and does not receive a risk color merely because it differs from China.
+
 ## Employer-Unfavorable Clause Signals
 
 Flag a clause even if it is lawful when it:
@@ -55,6 +57,8 @@ Use this classification when the issue is a difference between contract language
 | Contract mixes amounts with different payment deadlines | 🔴 or 🟠 depending on wage-payment risk | Split earned wages, severance, unused leave payout, bonus/commission, expenses, equity, and contingent amounts |
 | Contract uses a single fixed rule where law varies by condition | 🟠 or 🟡 | Show the statutory bands/triggers and where the fixed rule is unfavorable or unclear |
 | Contract says "as required by law" but operational steps are missing | 🟡 unless a mandatory item is absent | List which HR/Payroll/Legal steps must be added |
+| Contract complies with a material local rule that still affects budget or operations | No risk classification unless implementation is deficient | Keep the item in the local-difference summary and state the Payroll, budget, HR, or workforce action |
+| Local-difference comparison lacks an official source on either the local or China side | No confirmed risk classification | Mark the item `待确认`; do not state that China has no equivalent rule |
 | Contract uses political or sovereignty-sensitive terminology | 🟠 unless only translation consistency is affected | Separate local legal effectiveness from company acceptability; provide neutral wording or require Legal/local counsel confirmation |
 
 Do not classify a lawful above-statutory benefit as "illegal". Describe it as an employer-side cost/flexibility issue and make the business choice explicit: accept the better benefit, narrow it, or revert to statutory minimum wording.

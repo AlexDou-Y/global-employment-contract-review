@@ -29,6 +29,12 @@
 | Restrictive covenants | [ ] | [ ] | [ ] |
 | Confidentiality / IP / data | [ ] | [ ] | [ ] |
 
+## Material Local Mechanisms and China Comparison
+
+| Topic | Local rule and China comparison | Employer cost / operational impact | Sources | Verification status |
+|---|---|---|---|---|
+| [Statutory salary increase / pay frequency / mandatory bonus or premium / special leave benefit / working-time cost / social security / termination cost] | [Use qualified comparison wording; do not state that China has no equivalent rule without authoritative support] | [Budget / Payroll / HR process / employment operations] | [Official local source] [Official China source] | [Verified / Local source pending / China comparison pending] |
+
 ## Employer-Unfavorable Watchouts
 
 | Clause pattern | Why it matters | Recommended HR position |
